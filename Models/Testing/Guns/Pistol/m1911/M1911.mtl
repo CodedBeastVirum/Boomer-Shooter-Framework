@@ -1,0 +1,19 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 02.10.2022 08:03:32
+
+newmtl M1911
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\usre\Desktop\m1911\textures\M1911_AO.png
+	map_Kd C:\Users\usre\Desktop\m1911\textures\M1911_Albedo.png
+	map_Ks C:\Users\usre\Desktop\m1911\textures\M1911_Metalness.png
+	map_bump C:\Users\usre\Desktop\m1911\textures\M1911_Normal.png
+	bump C:\Users\usre\Desktop\m1911\textures\M1911_Normal.png

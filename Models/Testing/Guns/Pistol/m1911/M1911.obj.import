@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://mwn6d28f1pev"
+path="res://.godot/imported/M1911.obj-a0356d206d0deff673b6a1dc2c7f8d69.mesh"
+
+[deps]
+
+files=["res://.godot/imported/M1911.obj-a0356d206d0deff673b6a1dc2c7f8d69.mesh"]
+
+source_file="res://Models/Testing/Guns/Pistol/m1911/M1911.obj"
+dest_files=["res://.godot/imported/M1911.obj-a0356d206d0deff673b6a1dc2c7f8d69.mesh", "res://.godot/imported/M1911.obj-a0356d206d0deff673b6a1dc2c7f8d69.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
