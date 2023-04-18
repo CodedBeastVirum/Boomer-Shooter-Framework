@@ -1,15 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://btqsdaroxcut3"]
 
-[ext_resource type="Script" path="res://Scripts/enemy/TestEnemy.gd" id="1_2qjfi"]
+[ext_resource type="Script" path="res://Scripts/enemy/BaseEnemy.gd" id="1_s0krr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nmaem"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_1po6p"]
 
 [node name="NavigationAgent3D" type="CharacterBody3D"]
-script = ExtResource("1_2qjfi")
+script = ExtResource("1_s0krr")
 
 [node name="navigation" type="NavigationAgent3D" parent="."]
+agent_height_offset = -1.0
 debug_enabled = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

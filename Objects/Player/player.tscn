@@ -7,12 +7,12 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f6gr7"]
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 floor_stop_on_slope = false
 floor_constant_speed = true
 script = ExtResource("1_bjtec")
 
-[node name="CharacterBodyCollisions" type="CollisionShape3D" parent="."]
+[node name="CharacterBodyCollisions" type="CollisionShape3D" parent="." groups=["Player"]]
 shape = SubResource("CapsuleShape3D_p0ei8")
 
 [node name="CamPivot" type="Node3D" parent="."]
@@ -28,9 +28,6 @@ transform = Transform3D(-1, -1.31877e-11, -8.73115e-08, 4.87717e-11, 1, 0, 8.742
 
 [node name="m_1911_mag" parent="CamPivot/Player Cam/Weapons/M1911/RootNode" index="1"]
 transform = Transform3D(231.651, -13.6916, 5.19264, 13.6471, 231.702, 2.1236, -5.30869, -1.81407, 232.046, -0.000316044, -0.218811, -0.170679)
-
-[node name="m_1911_bolt_01" parent="CamPivot/Player Cam/Weapons/M1911/RootNode" index="2"]
-transform = Transform3D(232.114, 0, 0, 0, 232.114, -3.78161e-05, 0, 3.78161e-05, 232.114, -0.00031605, 0.279651, 0.0746228)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_f6gr7")

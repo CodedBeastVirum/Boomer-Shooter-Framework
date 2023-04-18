@@ -1,7 +1,8 @@
 extends CharacterBody3D
 
-var movement_speed: float = 2.0
-var movement_target_position: Vector3 = Vector3(-20,0.0,10.0)
+var movement_speed: float = 10
+var movement_target_position: Vector3 = Vector3(-3.0,-1.912,2.0)
+@onready var movetarget = $"../Node3D"
 
 @onready var navigation_agent: NavigationAgent3D = $navigation
 
@@ -26,8 +27,14 @@ func set_movement_target(movement_target: Vector3):
 
 func _physics_process(delta):
 	if navigation_agent.is_navigation_finished():
+		set_movement_target(movetarget.get_position())
 		return
-
+		
+	
+	
+	#print(navigation_agent.is_target_reachable())
+	#print(navigation_agent.get_next_path_position())
+	
 	var current_agent_position: Vector3 = global_transform.origin
 	var next_path_position: Vector3 = navigation_agent.get_next_path_position()
 

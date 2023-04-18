@@ -8,7 +8,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kf8gv"]
 resource_name = "M1911"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_l2t1q")
 metallic = 1.0
 metallic_texture = ExtResource("2_dur5y")
@@ -212,46 +211,6 @@ _data = {
 "RESET": SubResource("Animation_vqhie")
 }
 
-[sub_resource type="Animation" id="Animation_rk7co"]
-resource_name = "Load"
-step = 0.01
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RootNode/m_1911_mag:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(-0.000316044, -0.218811, -0.170679), Vector3(-0.000316044, 0.126864, -0.0787958)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("RootNode/m_1911_mag:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(-0.0091491, 0.0223739, 0.0588312), Vector3(-0.00786885, 0.0228555, 0.00224259)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("RootNode/m_1911_bolt_01:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.4, 0.6, 0.67),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(-0.00031605, 0.279651, 0.0746228), Vector3(-0.00031605, 0.279651, 0.00340217), Vector3(-0.00031605, 0.279651, 0.0746228)]
-}
-
 [sub_resource type="Animation" id="Animation_2v0t7"]
 resource_name = "Fire"
 length = 0.25
@@ -305,6 +264,46 @@ tracks/3/keys = {
 "values": [true, true]
 }
 
+[sub_resource type="Animation" id="Animation_rk7co"]
+resource_name = "Load"
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RootNode/m_1911_mag:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.000316044, -0.218811, -0.170679), Vector3(-0.000316044, 0.126864, -0.0787958)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RootNode/m_1911_mag:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.0091491, 0.0223739, 0.0588312), Vector3(-0.00786885, 0.0228555, 0.00224259)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("RootNode/m_1911_bolt_01:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.4, 0.6, 0.67),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.00031605, 0.279651, 0.0746228), Vector3(-0.00031605, 0.279651, 0.00340217), Vector3(-0.00031605, 0.279651, 0.0746228)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3wscl"]
 _data = {
 "Fire": SubResource("Animation_2v0t7"),
@@ -322,7 +321,7 @@ mesh = SubResource("ArrayMesh_in1v8")
 skeleton = NodePath("")
 
 [node name="m_1911_mag" type="MeshInstance3D" parent="RootNode"]
-transform = Transform3D(231.651, -13.6916, 5.19263, 13.6471, 231.702, 2.1236, -5.3087, -1.81407, 232.046, -0.000316044, -0.218811, -0.170679)
+transform = Transform3D(231.651, -13.6916, 5.19264, 13.6471, 231.702, 2.1236, -5.30869, -1.81407, 232.046, -0.000316044, -0.218811, -0.170679)
 mesh = SubResource("ArrayMesh_u3qag")
 skeleton = NodePath("")
 
